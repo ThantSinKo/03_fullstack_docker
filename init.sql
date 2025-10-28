@@ -21,7 +21,8 @@ INSERT INTO `attraction` (`id`, `name`, `detail`, `coverimage`, `latitude`, `lon
 (10, 'Great Pyramid of Giza', 'The Great Pyramid of Giza is the oldest and largest of the pyramids in the Giza pyramid complex bordering present-day Giza in Greater Cairo, Egypt. It is the oldest of the Seven Wonders of th', 'https://www.melivecode.com/attractions/10.jpg', 29.979167, 31.134167),
 (11, 'Hollywood Sign', 'The Hollywood Sign is an American landmark and cultural icon overlooking Hollywood, Los Angeles, California. It is situated on Mount Lee, in the Beachwood Canyon area of the Santa Monica Moun', 'https://www.melivecode.com/attractions/11.jpg', 34.134061, -118.321592),
 (12, 'Wat Phra Kaew', 'Wat Phra Kaew, commonly known in English as the Temple of the Emerald Buddha and officially as Wat Phra Si Rattana Satsadaram, is regarded as the most sacred Buddhist temple in Thailand. The ', 'https://www.melivecode.com/attractions/12.jpg', 13.751389, 100.4925);
-
+(13, 'Great Barrier Reef', 'The Great Barrier Reef is the world\'s largest coral reef system composed of over 2,900 individual reefs and 900 islands.', 'https://cdn.britannica.com/64/155864-050-34FBD7A2/view-Great-Barrier-Reef-Australia-coast.jpg?w=300', -18.2871, 147.6992),
+(14, 'Uluru (Ayers Rock)', 'Uluru, also known as Ayers Rock, is a large sandstone rock formation in the southern part of the Northern Territory in central Australia.', 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Uluru%2C_helicopter_view%2C_cropped.jpg', -25.3444, 131.0369);
 
 ALTER TABLE `attraction`
   ADD PRIMARY KEY (`id`);
