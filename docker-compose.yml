@@ -17,8 +17,9 @@ services:
     networks: [stack]
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    platform: linux/amd64
+    image: phpmyadmin:fpm-alpine
+    platform: linux/arm64/v8
+    container_name: attractions_phpmyadmin2
     restart: unless-stopped
     environment:
       PMA_HOST: mysql
