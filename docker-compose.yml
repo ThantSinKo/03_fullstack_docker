@@ -18,13 +18,14 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
+    platform: linux/amd64
     restart: unless-stopped
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
       UPLOAD_LIMIT: 256M
     ports:
-      - "${PHPMYADMIN_PORT:-8080}:8080"
+      - "${PHPMYADMIN_PORT:-8080}:80"
     depends_on: [mysql]
     networks: [stack]
 
@@ -50,7 +51,7 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      - API_HOST=http://api:50005
+      - API_HOST=http://api:5005
     ports:
       - "${FRONTEND_PORT:-3000}:3000"
     depends_on: [api]
