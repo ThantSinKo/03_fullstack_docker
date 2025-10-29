@@ -17,7 +17,7 @@ services:
     networks: [stack]
 
   phpmyadmin:
-    image: phpmyadmin:fpm-alpine
+    image: phpmyadmin:latest
     platform: linux/arm64/v8
     container_name: attractions_phpmyadmin2
     restart: unless-stopped
